@@ -5,7 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 import {
   MatSnackBar,
 } from '@angular/material/snack-bar';
-
+import { CustomLogger } from 'custom-logger-plugin';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -16,8 +16,11 @@ import {
 export class AppComponent {
   title = 'test-task-capacitor-plugin';
   message = 'Hello World';
-  constructor(private _snackbar: MatSnackBar) {}
-  sendMessage(text: string) {
-    this._snackbar.open(text);
+  constructor(
+    private _snackbar: MatSnackBar,
+  ) {}
+  async sendMessage(text: string) {
+    const message = await CustomLogger.log({value: text});
+    this._snackbar.open(message.value);
   }
 }

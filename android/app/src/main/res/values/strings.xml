@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">test-task-capacitor-plugin</string>
+    <string name="title_activity_main">test-task-capacitor-plugin</string>
+    <string name="package_name">com.fedirlatyshev.capacitorplugintesttask</string>
+    <string name="custom_url_scheme">com.fedirlatyshev.capacitorplugintesttask</string>
+</resources>
