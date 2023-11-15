@@ -3,4 +3,4 @@ include ':capacitor-android'
 project(':capacitor-android').projectDir = new File('../node_modules/@capacitor/android/capacitor')
 
 include ':custom-logger-plugin'
-project(':custom-logger-plugin').projectDir = new File('../../custom-logger-plugin/android')
+project(':custom-logger-plugin').projectDir = new File('../node_modules/custom-logger-plugin/android')

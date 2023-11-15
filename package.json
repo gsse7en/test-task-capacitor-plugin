@@ -23,7 +23,7 @@
     "@capacitor/android": "^5.5.1",
     "@capacitor/core": "^5.5.1",
     "@capacitor/ios": "^5.5.1",
-    "custom-logger-plugin": "file:../custom-logger-plugin",
+    "custom-logger-plugin": "^0.0.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2"
